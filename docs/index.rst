@@ -30,6 +30,9 @@ Contents
    :maxdepth: 2
 
    Overview <readme>
+   Design concept <concept>
+   Input data <data>
+   Model set up <model>
    Contributions & Help <contributing>
    License <license>
    Authors <authors>
