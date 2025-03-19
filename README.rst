@@ -26,6 +26,9 @@
 .. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
     :alt: Project generated with PyScaffold
     :target: https://pyscaffold.org/
+.. image:: https://readthedocs.org/projects/CORE-WESM/badge/?version=latest
+    :alt: ReadTheDocs
+    :target: https://CORE-WESM.readthedocs.io/en/stable/
 
 |
 
@@ -38,6 +41,7 @@ CORE-WESM
 
 
 A longer description of your project goes here...
+
 
 
 .. _pyscaffold-notes:

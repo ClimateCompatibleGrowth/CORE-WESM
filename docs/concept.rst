@@ -1,5 +1,0 @@
-.. _concept:
-
-=======
-Design concept
-=======
