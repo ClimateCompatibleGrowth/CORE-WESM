@@ -22,7 +22,7 @@ The CORE-WESM is a county-disaggregated version of the open-source whole energy 
 #. The creation of a county-resolved model input data set based on the disaggregation of OSeMOSYS-Kenya and inclusion of different county-level data.
 #. The flexible application of the county-resolved model through an multi-scale modelling framework wrapped around the OSeMOSYS framework.
 
-Both steps are explained in more detail on the respective pages of the documentation linked below.
+Both steps are explained in more detail on the respective pages of the documentation linked in the navigation panel on the left and below.
 
 
 .. warning::
