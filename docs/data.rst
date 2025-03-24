@@ -17,6 +17,9 @@ Model Disaggregation and Data Downscaling
 
 The following section summarizes the disaggregating process from a national to a county-level model and details how to run the associated Python scripts.
 
+.. image:: ../figures/Ctr_county.png
+
+
 Overview
 --------
 The disaggregation and downscaling process involves three main steps:
@@ -45,11 +48,12 @@ The disaggregation and downscaling process involves three main steps:
 - **Box C: County-level Downscaling**
   - The script ``to_counties.py`` processes the sectoral model to generate county-level models.
   - **Key functions:**
-    - Allocates residential demand using population data from ``counties_population_KNBS.csv``.
-    - Scales sectors like agriculture and services using GDP data from ``GCP 2021_KNBS.csv``.
+    - Allocates residential sector using population data from ``counties_population_KNBS.csv``. Population by county available in [1]_.
+    - Scales sectors like agriculture and services using gross county product (GCP) by economic activity. The Kenya    National Bureau of Statistics (KNBS) offers this information annually based on economic activity and, most importantly, at the county level [2]_.
+
   - **Outputs include:**
-    - **County Folders:** Each contains sector-specific data tailored to county characteristics.
-    - **National Folder:** Updated with non-disaggregated data to maintain consistency.
+   - **County Folders:** Each contains sector-specific data tailored to county characteristics.
+   - **National Folder:** Updated with non-disaggregated data to maintain consistency.
 
 Running the Python Files
 ------------------------
@@ -83,6 +87,9 @@ Additional Details
 ------------------
 - The initial downscaling approach uses GDP and population metrics to create a national county model.
 - Detailed county-level data, such as Gross County Product (GCP) by economic activity from KNBS, can further refine the model by capturing sector-specific contributions (e.g., comparing agriculture in Nairobi vs. Meru).
+
+.. [1] KNBS, “2023 GROSS COUNTY PRODUCT,” Kenya National Bureau of Statistics, 2023, Accessed: Mar. 05, 2025. [Online]. Available: https://www.knbs.or.ke/wp-content/uploads/2023/10/GCP-report-2023.pdf
+.. [2] KNBS, Kenya National Bureau of Statistics, 2023, Accessed: Mar. 05, 2025. [Online]. Available: https://www.knbs.or.ke
 
 
 
