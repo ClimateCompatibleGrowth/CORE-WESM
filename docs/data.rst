@@ -15,14 +15,24 @@ Implementing the disaggregation of a national model, such as the WESM, to the co
 Model Disaggregation and Data Downscaling
 ==========================================
 
-The following section summarizes the process of disaggregating a national model to a county-level model and details how to run the associated Python scripts.
+The following section summarizes the disaggregating process from a national to a county-level model and details how to run the associated Python scripts.
 
 Overview
 --------
 The disaggregation and downscaling process involves three main steps:
 
 - **Box A: National Model**
-  - The national model is stored in an Excel (*.xlsx) file containing all parameters, sets, and commodities representing the model at a national scale.
+  - The national model is stored in an (*.xlsx) file containing all parameters, sets, and commodities representing the model at a national scale. This (*.xlsx) file is obtained by converting the WESM.txt into Excel Data called WESM.xlsx:
+
+   .. code-block:: bash
+      
+      otoole convert datafile excel wesm.txt wesm.xlsx config.yaml
+
+   Alternatively, the workflow provides a Python script that converts the data from a text file to an Excel file.
+
+   .. code-block:: bash
+
+      python onvert_national_model.py
 
 - **Box B: Sector-specific Disaggregation**
   - The script ``to_sector.py`` processes the national model (WESM.xlsx) and disaggregates it into sector-specific Excel files.
