@@ -50,34 +50,22 @@ The disaggregation and downscaling process involves three main steps:
   - **Key functions:**
     - Allocates residential sector using population data from ``counties_population_KNBS.csv``. Population by county available in [1]_.
     - Scales sectors like agriculture and services using gross county product (GCP) by economic activity. The Kenya    National Bureau of Statistics (KNBS) offers this information annually based on economic activity and, most importantly, at the county level [2]_.
-
   - **Outputs include:**
-   - **County Folders:** Each contains sector-specific data tailored to county characteristics.
-   - **National Folder:** Updated with non-disaggregated data to maintain consistency.
+    - **County Folders:** Each contains sector-specific data tailored to county characteristics.
+    - **National Folder:** Updated with non-disaggregated data to maintain consistency.
 
 Running the Python Files
 ------------------------
 To execute the disaggregation and downscaling scripts, follow these steps:
 
-1. **Clone the Repository:**
 
-   .. code-block:: bash
-
-      git clone https://github.com/lhofbauer/CORE-WESM.git
-
-2. **Navigate to the Repository Directory:**
-
-   .. code-block:: bash
-
-      cd CORE-WESM
-
-3. **Run the Sector-specific Disaggregation Script:**
+1. **Run the Sector-specific Disaggregation Script:**
 
    .. code-block:: bash
 
       python to_sector.py
 
-4. **Run the County-level Downscaling Script:**
+2. **Run the County-level Downscaling Script:**
 
    .. code-block:: bash
 

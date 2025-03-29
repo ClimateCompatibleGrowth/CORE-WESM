@@ -1,0 +1,44 @@
+# Config for processing CORE-WESM data
+name: "CORE-WESM"
+model_files:
+    input_data: "../model/Counties_model"
+    data_config: "./config_files/config_CORE-WESM_fast.yaml"
+    data_config_wft: "./config_files/config_CORE-WESM_fast_.yaml"
+    tech_sec_lookup: "./tech_to_sector.xlsx"
+    fuel_sec_lookup: "./dem_com_to_sector.xlsx"
+read_strategy:
+    fileext: [".xlsx",".xls",".ods"] # spreadsheet extensions to be recognized
+    recursively: True
+    use_markers: False
+    markers: 
+        table: "#PARSE#"
+        all: "#ALL"
+    rounding: 4 # False or number of decimals
+    defaults:
+        REGION: "RE1"
+        MODE_OF_OPERATION: 1
+write_strategy:
+    spreadsheet:
+        fuel_rename: False # False or alternative name of 'FUEL' set (often COMMODITY)
+    datafile:
+        fuel_rename: False
+        region_sep: "9" # Should not otherwise be part of names of set elements
+                        # and not : or _
+scenarios: # Scenarios need to have unique names
+    - name: "Reference"
+      model: "WESM"
+      levers: ["Reference"]
+      timehorizon: [2015,2051] # note the end year is not included
+    - name: "StatedPolicies"
+      model: "WESM"
+      levers: ["Reference"]
+      timehorizon: [2015,2051]
+run:
+    model_file: "../model/osemosys_fast.txt"
+    results_dir: "../results/"
+    glpk_dir: "../envs/bin/"
+    scenarios: ["Reference"]
+    solver: "highs"
+    solver_cwd: "./"
+    run_id: "v002"
+    
