@@ -1,8 +1,8 @@
 .. _data:
 
-=======
+================
 Model input data
-=======
+================
 
 The input data file for the disaggregation of the county model is the Kenya Whole Energy System Model `(WESM) <https://osemosys-kenya-wesm.readthedocs.io/en/latest/>`_. This a linear optimization model of Kenya's entire energy system developed using OSeMOSYS. It offers a detailed overview of the power and major energy-demanding sectors, including agriculture, commerce, industry, residential, and transportation.
 
@@ -90,6 +90,5 @@ Additional Details
 
 .. [1] KNBS, “2023 GROSS COUNTY PRODUCT,” Kenya National Bureau of Statistics, 2023, Accessed: Mar. 05, 2025. [Online]. Available: https://www.knbs.or.ke/wp-content/uploads/2023/10/GCP-report-2023.pdf
 .. [2] KNBS, Kenya National Bureau of Statistics, 2023, Accessed: Mar. 05, 2025. [Online]. Available: https://www.knbs.or.ke
-
 
 
