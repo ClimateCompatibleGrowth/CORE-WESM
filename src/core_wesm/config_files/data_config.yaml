@@ -38,11 +38,11 @@ CapitalCost:
     type: param
     dtype: float
     default: 0
-CapitalCostStorage:
-    indices: [REGION,STORAGE,YEAR]
-    type: param
-    dtype: float
-    default: 0
+# CapitalCostStorage:
+#     indices: [REGION,STORAGE,YEAR]
+#     type: param
+#     dtype: float
+#     default: 0
 #Conversionld:
 #    indices: [TIMESLICE,DAYTYPE]
 #    type: param
@@ -138,11 +138,11 @@ OperationalLife:
     type: param
     dtype: float
     default: 1
-OperationalLifeStorage:
-    indices: [REGION,STORAGE]
-    type: param
-    dtype: float
-    default: 0
+# OperationalLifeStorage:
+#     indices: [REGION,STORAGE]
+#     type: param
+#     dtype: float
+#     default: 0
 OutputActivityRatio:
     indices: [REGION,TECHNOLOGY,COMMODITY,MODE_OF_OPERATION,YEAR]
     type: param
@@ -328,44 +328,44 @@ RETagFuel:
     type: param
     dtype: float
     default: 0
-UDC:
-    type: set
-    dtype: str
-UDCTag:
-    indices: [REGION,UDC]
-    type: param
-    dtype: float
-    default: -1 
-UDCConstant:
-    indices: [REGION,UDC,YEAR]
-    type: param
-    dtype: float
-    default: 0 
-UDCMultiplierActivity:
-    indices: [REGION,TECHNOLOGY,UDC,YEAR]
-    type: param
-    dtype: float
-    default: 0 
-UDCMultiplierNewCapacity:
-    indices: [REGION,TECHNOLOGY,UDC,YEAR]
-    type: param
-    dtype: float
-    default: 0 
-UDCMultiplierTotalCapacity:
-    indices: [REGION,TECHNOLOGY,UDC,YEAR]
-    type: param
-    dtype: float
-    default: 0 
-InputToNewCapacityRatio:
-    indices: [REGION,TECHNOLOGY,COMMODITY,YEAR]
-    type: param
-    dtype: float
-    default: 0 
-InputToTotalCapacityRatio:
-    indices: [REGION,TECHNOLOGY,COMMODITY,YEAR]
-    type: param
-    dtype: float
-    default: 0 
+# UDC:
+#     type: set
+#     dtype: str
+# UDCTag:
+#     indices: [REGION,UDC]
+#     type: param
+#     dtype: float
+#     default: -1 
+# UDCConstant:
+#     indices: [REGION,UDC,YEAR]
+#     type: param
+#     dtype: float
+#     default: 0 
+# UDCMultiplierActivity:
+#     indices: [REGION,TECHNOLOGY,UDC,YEAR]
+#     type: param
+#     dtype: float
+#     default: 0 
+# UDCMultiplierNewCapacity:
+#     indices: [REGION,TECHNOLOGY,UDC,YEAR]
+#     type: param
+#     dtype: float
+#     default: 0 
+# UDCMultiplierTotalCapacity:
+#     indices: [REGION,TECHNOLOGY,UDC,YEAR]
+#     type: param
+#     dtype: float
+#     default: 0 
+# InputToNewCapacityRatio:
+#     indices: [REGION,TECHNOLOGY,COMMODITY,YEAR]
+#     type: param
+#     dtype: float
+#     default: 0 
+# InputToTotalCapacityRatio:
+#     indices: [REGION,TECHNOLOGY,COMMODITY,YEAR]
+#     type: param
+#     dtype: float
+#     default: 0 
 RateOfActivity:
     indices: [REGION,TIMESLICE,TECHNOLOGY,MODE_OF_OPERATION,YEAR]
     type: result
