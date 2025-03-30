@@ -37,17 +37,17 @@ CORE-WESM
 =========
 
 
-    Add a short description here!
+    A COunty-REsolved Whole Energy System Model (CORE-WESM) for Kenya.
 
 
-A longer description of your project goes here...
+This repository contains the data, code, and documentation of CORE-WESM.
+
+The documentation is also hosted on `ReadTheDocs <https://CORE-WESM.readthedocs.io/en/stable/>`_
 
 
+Acknowledgement
+===============
 
-.. _pyscaffold-notes:
+The development of the CORE-WESM was supported by funding from the UK Partnering for Accelerated Climate Transitions (PACT) programme and the Climate Compatible Growth (CCG) programme. CCG is funded by UK aid from the UK government. However, the views expressed herein do not necessarily reflect the UK government's official policies.
 
-Note
-====
 
-This project has been set up using PyScaffold 4.5. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
