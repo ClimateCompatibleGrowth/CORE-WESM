@@ -42,7 +42,7 @@ CORE-WESM
 
 This repository contains the data, code, and documentation of CORE-WESM.
 
-The documentation is also hosted on `ReadTheDocs <https://CORE-WESM.readthedocs.io/en/stable/>`_
+The documentation is also hosted on `ReadTheDocs <https://CORE-WESM.readthedocs.io/en/stable/>`_.
 
 
 Acknowledgements
