@@ -45,7 +45,7 @@ This repository contains the data, code, and documentation of CORE-WESM.
 The documentation is also hosted on `ReadTheDocs <https://CORE-WESM.readthedocs.io/en/stable/>`_
 
 
-Acknowledgement
+Acknowledgements
 ===============
 
 The development of the CORE-WESM was supported by funding from the UK Partnering for Accelerated Climate Transitions (PACT) programme and the Climate Compatible Growth (CCG) programme. CCG is funded by UK aid from the UK government. However, the views expressed herein do not necessarily reflect the UK government's official policies.
