@@ -11,7 +11,7 @@ To download and set up the CORE-WESM model workflow, the following steps need to
 
    .. code-block:: bash
 
-      git clone https://github.com/lhofbauer/CORE-WESM.git
+      git clone https://github.com/ClimateCompatibleGrowth/CORE-WESM.git
 
 2. **Navigate to the repository directory:**
 
