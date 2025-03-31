@@ -60,7 +60,7 @@ Contents
    :maxdepth: 1
 
    Installation <installation>
-   Input data processing <data>
+   Model input data <data>
    Model application <model>
    Contributions & Help <contributing>
    License <license>
