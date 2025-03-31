@@ -41,7 +41,7 @@ Related material
 
 * Both OSeMOSYS-Kenya and CORE-WESM are based on the **OSeMOSYS framework**. More information on OSeMOSYS can be found on its  `GitHub repository <https://github.com/OSeMOSYS/OSeMOSYS>`_ and `documentation <https://osemosys.readthedocs.io/en/latest/index.html>`_. 
 * CORE-WESM is a county-resolved version of the **OSeMOSYS-Kenya WESM**. More information on OSeMOSYS-Kenya can be found on its  `GitHub repository <https://github.com/ClimateCompatibleGrowth/osemosys_kenya_wesm>`_ and `documentation <https://osemosys-kenya-wesm.readthedocs.io/en/latest/>`_.  
-* The multi-scale functionality of the CORE-WESM is based on the **fratoo** framework. More information on fratoo can be found on its  `GitHub repository <https://github.com/>`_ and `documentation <https://www.readthedocs.io/>`_. 
+* The multi-scale functionality of the CORE-WESM is based on the **fratoo** framework. More information on fratoo can be found on its  `GitHub repository <https://github.com/lhofbauer/fratoo>`_ and `documentation <https://fratoo.readthedocs.io/en/latest/>`_. 
 
 
 
@@ -94,4 +94,4 @@ Indices and tables
 .. _wesm docs : https://osemosys-kenya-wesm.readthedocs.io/en/latest/
 .. _wesm github : https://github.com/ClimateCompatibleGrowth/osemosys_kenya_wesm
 .. _preprint : https://zenodo.org/
-.. _scoping report : https://zenodo.org/
+.. _scoping report : https://doi.org/10.5281/zenodo.15108308
