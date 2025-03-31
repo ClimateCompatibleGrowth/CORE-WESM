@@ -1,43 +1,53 @@
 # Config for processing CORE-WESM data
 name: "CORE-WESM"
 model_files:
-    input_data: "../model/Counties_model"
-    data_config: "./config_files/config_CORE-WESM_fast.yaml"
-    data_config_wft: "./config_files/config_CORE-WESM_fast_.yaml"
-    tech_sec_lookup: "./tech_to_sector.xlsx"
-    fuel_sec_lookup: "./dem_com_to_sector.xlsx"
+    input_data: "../model/Counties_model" # folder with input data
+    data_config: "./config_files/data_config.yaml" # data config file
+    tech_sec_lookup: "./tech_to_sector.xlsx" # technology-sector lookup table
+    fuel_sec_lookup: "./dem_com_to_sector.xlsx" # fuel-sector lookup table
 read_strategy:
     fileext: [".xlsx",".xls",".ods"] # spreadsheet extensions to be recognized
-    recursively: True
-    use_markers: False
+    recursively: True # if to load files recursively from a directory
+    use_markers: False # if to use markers to identify tables to read
     markers: 
-        table: "#PARSE#"
-        all: "#ALL"
-    rounding: 4 # False or number of decimals
-    defaults:
+        table: "#PARSE#" # marker on the top of leftern most row of table to scan
+        all: "#ALL" # marker for row to count for all, e.g., scenarios
+    rounding: 4 # False or number of decimals to round to
+    defaults: # default values for OSeMOSYS sets
         REGION: "RE1"
         MODE_OF_OPERATION: 1
 write_strategy:
     spreadsheet:
         fuel_rename: False # False or alternative name of 'FUEL' set (often COMMODITY)
     datafile:
-        fuel_rename: False
+        fuel_rename: False # False or alternative name of 'FUEL' set (often COMMODITY)
         region_sep: "9" # Should not otherwise be part of names of set elements
                         # and not : or _
+data_processing:
+    set_rename: {"COMMODITY":"FUEL"} # False or dict mapping old to new set name
+    agg_years: "./config_files/ysa.csv" # False or filepath to CSV file with aggregation
+    agg_timeslices: "./config_files/tsa.csv" # False or filepath to CSV file with aggregation
+    agg_config: "./config_files/tap.csv" # Filepath to CSV file that defines aggregation method
+
 scenarios: # Scenarios need to have unique names
-    - name: "Reference"
-      model: "WESM"
-      levers: ["Reference"]
+    - name: "Reference" # scenario name
+      model: "WESM" # model – this can be used to split out parts of a model
+      levers: ["Reference"] # list of scenario lever that will be used
       timehorizon: [2015,2051] # note the end year is not included
     - name: "StatedPolicies"
       model: "WESM"
       levers: ["Reference"]
       timehorizon: [2015,2051]
 run:
-    model_file: "../model/osemosys_fast.txt"
-    results_dir: "../results/"
-    glpk_dir: "../envs/bin/"
-    scenarios: ["Reference"]
+    model_file: "../model/osemosys_fast.txt" # OSeMOSYS model file to use
+    results_dir: "../results/" # root directory for results folders
+    glpk_dir: "../envs/bin/" # directory with GLPK executable
+    scenarios: ["Reference"] # list of scenarios to run
+    spatial_config: "full-sep" # Either list of counties, 'full' for all counties,
+                         # 'full-sep' for all counties optimized separately,
+                         # or 'full-agg' for all counties aggregated
+    solve: True # True to solve, 'datafile' or 'spreadsheet' to only write
+                     # out the respective file but not solve the run
     solver: "highs"
     solver_cwd: "./"
     run_id: "v002"
