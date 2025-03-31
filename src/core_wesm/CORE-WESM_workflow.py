@@ -16,6 +16,7 @@ import pandas as pd
 # that also includes this script – these will be packaged in future
 import ospro as op
 
+import graphing_library as gl
 
 #%% Set up logger
 root_logger = logging.getLogger()
@@ -233,3 +234,11 @@ elif "sep" in pcfg["run"]["spatial_config"]:
         # Use process data for plots or save
         op.save_results(res, pcfg, dcfg)
 
+#%% Plotting
+
+for p in pcfg["plotting"]:
+    gl.plot_tech_sector(pcfg, results=res, parameter=p["parameter"],
+                        scenario=p["scenario"],
+                        sector=p["sector"],
+                        geography=p["geography"],
+                        xscale=pcfg["data_processing"]["agg_years"])

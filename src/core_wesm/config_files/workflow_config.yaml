@@ -1,10 +1,10 @@
 # Config for processing CORE-WESM data
 name: "CORE-WESM"
 model_files:
-    input_data: "../model/Counties_model" # folder with input data
+    input_data: "./data/Counties_model" # folder with input data
     data_config: "./config_files/data_config.yaml" # data config file
-    tech_sec_lookup: "./tech_to_sector.xlsx" # technology-sector lookup table
-    fuel_sec_lookup: "./dem_com_to_sector.xlsx" # fuel-sector lookup table
+    tech_sec_lookup: "./config_files/tech_to_sector.xlsx" # technology-sector lookup table
+    fuel_sec_lookup: "./config_files/dem_com_to_sector.xlsx" # fuel-sector lookup table
 read_strategy:
     fileext: [".xlsx",".xls",".ods"] # spreadsheet extensions to be recognized
     recursively: True # if to load files recursively from a directory
@@ -43,7 +43,7 @@ run:
     results_dir: "../results/" # root directory for results folders
     glpk_dir: "../envs/bin/" # directory with GLPK executable
     scenarios: ["Reference"] # list of scenarios to run
-    spatial_config: "full-sep" # Either list of counties, 'full' for all counties,
+    spatial_config: "full-agg"# Either list of counties, 'full' for all counties,
                          # 'full-sep' for all counties optimized separately,
                          # or 'full-agg' for all counties aggregated
     solve: True # True to solve, 'datafile' or 'spreadsheet' to only write
@@ -52,3 +52,9 @@ run:
     solver_cwd: "./"
     run_id: "v002"
     
+plotting: 
+    - scenario: "Reference" # scenario name
+      parameter: "ProductionByTechnologyAnnual" # parameter/variable to plot
+      sector: "Residential" # sector to plot, None if all
+      geography: "BA" # geography to plot, None if all
+      

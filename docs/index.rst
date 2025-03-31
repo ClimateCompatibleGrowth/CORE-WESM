@@ -19,13 +19,13 @@ The CORE-WESM is a county-disaggregated version of the open-source whole energy 
 
 
 #. The creation of a county-resolved model input data set based on the disaggregation of OSeMOSYS-Kenya and inclusion of different county-level data.
-#. The flexible application of the county-resolved model faclitated by a compact multi-scale modelling framework wrapped around the OSeMOSYS.
+#. The flexible application of the county-resolved model faclitated by a compact multi-scale modelling framework wrapped around OSeMOSYS.
 
 Both steps are explained in more detail on the respective pages of the documentation linked in the navigation panel on the left and below.
 
 
 .. warning::
-   The current CORE-WESM version can be considered a minimal viable product (MVP) with several limitations. It aims to provide the foundations for further development, in particular the integration of county-specific data data and county energy plans as and when developed.
+   The current CORE-WESM version can be considered a minimal viable product (MVP) with several limitations. It aims to provide the foundations for further development, in particular the integration of county-specific data and county energy plans as and when developed.
 
 
 Scope of this documentation
@@ -93,5 +93,5 @@ Indices and tables
 .. _classical style: https://www.sphinx-doc.org/en/master/domains.html#info-field-lists
 .. _wesm docs : https://osemosys-kenya-wesm.readthedocs.io/en/latest/
 .. _wesm github : https://github.com/ClimateCompatibleGrowth/osemosys_kenya_wesm
-.. _preprint : https://zenodo.org/
+.. _preprint : https://doi.org/10.5281/zenodo.15115502
 .. _scoping report : https://doi.org/10.5281/zenodo.15108308

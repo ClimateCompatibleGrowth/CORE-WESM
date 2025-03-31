@@ -1,0 +1,19 @@
+name: wesm_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pandas
+  - numpy=1.26
+  - plotly
+  - pyyaml
+  - frictionless
+  - pyomo
+  - geopandas
+  - shapely
+  - pip
+  - pip:
+      - otoole==1.1.2
+      - pandas_datapackage_reader
+      - geopandas==1.0.1
+      - xlrd==2.0.1

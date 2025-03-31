@@ -75,7 +75,7 @@ The script can be run as follows
 Results analysis
 ====================
 
-Based on the focus or research question at hand, an analysis of the modelling results can be performed. The workflow script includes initial plotting functions that can be extended, or a separate processing or plotting of results data can be performed for more comprehensive analyses (e.g., using spreadsheet software.
+Based on the focus or research question at hand, an analysis of the modelling results can be performed. The workflow script includes initial plotting functions that can be extended, or a separate processing or plotting of results data can be performed for more comprehensive analyses, e.g., using spreadsheet software.
 
 
 
@@ -96,5 +96,5 @@ Based on the focus or research question at hand, an analysis of the modelling re
     `Google style`_ (recommended!), `NumPy style`_ and `classical style`_.
 .. _fratoo: https://fratoo.readthedocs.io/en/latest/
 .. _Python: https://docs.python.org/
-.. _preprint : https://zenodo.org/
+.. _preprint : https://doi.org/10.5281/zenodo.15115502
 .. _otoole : https://otoole.readthedocs.io/en/latest/
