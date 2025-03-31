@@ -44,6 +44,15 @@ This repository contains the data, code, and documentation of CORE-WESM.
 
 The documentation is also hosted on `ReadTheDocs <https://CORE-WESM.readthedocs.io/en/latest>`_.
 
+Licenses
+########
+
+
+The model data files, derived from the national `OSeMOSYS-Kenya <https://github.com/ClimateCompatibleGrowth/osemosys_kenya>`_ model, located at ``src/core_wesm/data/`` are released under a `CC BY 4.0 <https://creativecommons.org/licenses/by/4.0/deed.en>`_ license.
+
+All other model files are released under a MIT license (see LICENSE.txt).
+
+
 
 Acknowledgements
 ===============
