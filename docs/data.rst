@@ -17,8 +17,10 @@ Model Disaggregation and Data Downscaling
 
 The following section summarizes the disaggregating process from a national to a county-level model and details how to run the associated Python scripts.
 
-.. image:: ../figures/Ctr_county.png
+.. figure:: ../figures/Ctr_county.png
+   :alt: Country-to-county disaggregation and data downscaling 
 
+   Diagramme showing Country-to-County disaggregation and data downscaling
 
 Overview
 --------
