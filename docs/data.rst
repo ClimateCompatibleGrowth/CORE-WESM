@@ -40,7 +40,7 @@ The disaggregation and downscaling process involves three main steps:
       python A_convert_national_model.py
 
 - **Box B: Sector-specific Disaggregation**
-  - The script ``to_sector.py`` processes the  initial CORE-WESM dataset (WESM.xlsx) and disaggregates it into sector-specific Excel files.
+  - The script ``B_convert_to_sector.py`` processes the  initial CORE-WESM dataset (WESM.xlsx) and disaggregates it into sector-specific Excel files.
   - **Outputs include:**
     - **Sectoral Files:** One file per sector (e.g., Agriculture.xlsx, Electricity.xlsx) with disaggregated data.
     - **Set.xlsx:** Consolidates set-related data.
@@ -48,7 +48,7 @@ The disaggregation and downscaling process involves three main steps:
     - **Other.xlsx:** Stores data not fitting into specific sector mappings.
 
 - **Box C: County-level Downscaling**
-  - The script ``to_counties.py`` processes the sectoral files to generate county-resolved datasets.
+  - The script ``C_convert_to_counties.py`` processes the sectoral files to generate county-resolved datasets.
   - **Key functions:**
     - Allocates the residential sector using population data from ``counties_population_KNBS.csv``. Population by county available in [1]_.
     - Scales sectors like agriculture and services using gross county product (GCP) by economic activity. The Kenya    National Bureau of Statistics (KNBS) offers this information annually based on economic activity and, most importantly, at the county level [2]_.
@@ -78,6 +78,13 @@ To execute the disaggregation and downscaling scripts, follow these steps:
    .. code-block:: bash
 
       python D_updated_DHS_to_counties.py
+
+**Run the updated residential technology activity data:**
+This script performs batch updates to Excel files related to county-level residential technology activity data, applying specific growth trends to certain technologies. In the script, a dictionary *tech_increase_map* defines annual growth rates for particular cooking technologies.
+
+.. code-block:: bash
+
+      python D_1_upd_increase_decrease_lim.py
 
 **Run the copy multiscale folder script:**
 
