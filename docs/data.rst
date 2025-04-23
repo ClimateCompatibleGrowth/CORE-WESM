@@ -60,7 +60,6 @@ Running the Python Files
 ------------------------
 To execute the disaggregation and downscaling scripts, follow these steps:
 
-
 **Run the Sector-specific Disaggregation script:**
 
    .. code-block:: bash
@@ -81,6 +80,10 @@ To execute the disaggregation and downscaling scripts, follow these steps:
 
 **Run the updated residential technology activity data:**
 This script performs batch updates to Excel files related to county-level residential technology activity data, applying specific growth trends to certain technologies. In the script, a dictionary *tech_increase_map* defines annual growth rates for particular cooking technologies.
+
+.. figure:: ../figures/dic.png
+
+Dictionary for annual growth rates.
 
 .. code-block:: bash
 
