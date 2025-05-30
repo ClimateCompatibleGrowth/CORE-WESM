@@ -1,0 +1,15 @@
+"Annexe I: GCP by Economic Activity at Current Prices, 2022",,,,,,,,,,,,,,,,,,,
+link:,https://www.knbs.or.ke/wpcontent/uploads/2023/10/GCPreport2023.pdf,,,,,,,,,,,,,,,,,,
+KSh million,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,"Agriculture, Forestry and Fishing",Mining_quarryanding,Manufacturing,Electricity supply,Watersupply; waste collection,Construction,Wholesale and retail trade;repair of motor vehicles,Transport and storage,Accommodation and food service activities,Information and communication,Financial and insurance activities,Real estate activities,Professional and technical services,Adminsitrative support  services,Public administration and  defence,Education,Human health and social work  activi,Other service  activities,Financial services indirectly measured
+Sectors,Sec_1,Sec_2,Sec_3,Sec_4,Sec_5,Sec_6,Sec_7,Sec_8,Sec_9,Sec_10,Sec_11,Sec_12,Sec_13,Sec_14,Sec_15,Sec_16,Sec_17,Sec_18,Sec_19
+,,,,,,,,,,,,,,,,,,,
+Disagregation,,,,,,,,,,,,,,,,,,,
+Agriculture,Sec_1,,,,,,,,,,,,,,,,,,
+Industry,,Sec_2,Sec_3,,,Sec_6,,,,,,,,,,,,,
+Services,,,,Sec_4,Sec_5,,Sec_7,,Sec_9,Sec_10,Sec_11,Sec_12,Sec_13,Sec_14,Sec_15,Sec_16,Sec_17,Sec_18,Sec_19
+Transport,,,,,,,,Sec_8,,,,,,,,,,,
+Backstop,,,,,,,,,,,,,,,,,,,
+Residential,,,,,,,,,,,,,,,,,,,
