@@ -2,7 +2,6 @@
 
 Functions for processing downscaled model towards CORE-WESM dataset 
 
-Copyright (C) 2026 Leonhard Hofbauer, licensed under a MIT license
 
 """
 
@@ -99,12 +98,40 @@ def save_model(path, data, overwrite=False):
 #%% Define functions for the integration of county-resolved datasets
 
 
-def cookstove_dataset(data):
-    # FIXME: move filepaths to a config file
+def cookstove_dataset(data,
+                      list_counties,
+                      housing_char,
+                      housing_dem,
+                      nat_scens,
+                      el_access,
+                      market_seg):
+    """ Enhance cooking sector representation
     
-    # for testing
-    # input_path  ="../model/county_model/v013/"
-    # data = load_model(input_path)
+
+    Parameters
+    ----------
+    data : dict
+        Input data set to process.
+    list_counties : str
+        File path to list of counties.
+    housing_char : str
+        File path to data with housing characteristics.
+    housing_dem : str
+        File path to data with housing demographics.
+    nat_scens : str
+        Path to directory with national scenario data.
+    el_access : str
+        File path to data on electricity access.
+    market_seg : str
+        File path to data on clean cooking market segmentation.
+
+    Returns
+    -------
+    dict
+        Processed model input data set.
+
+    """
+    
     
     #%% helper functions
     def to_frac(df):
@@ -117,10 +144,10 @@ def cookstove_dataset(data):
     #%% load county data
     
     # load list of counties
-    counties = pd.read_csv("config_files/list_counties.csv",
+    counties = pd.read_csv(list_counties,
                            keep_default_na=False)
     # load data tables
-    cdf = pd.read_excel("../data/raw/KNBS/housing_survey/Chapter-5-Housing-Characteristics-Amenities-and-Adequacy.xlsx",
+    cdf = pd.read_excel(housing_char,
                         sheet_name="Table 5.7",
                         skiprows=2,
                         usecols="A:S"
@@ -151,7 +178,7 @@ def cookstove_dataset(data):
     cdf = cdf.T.groupby("Stoves").sum()
 
 
-    sdf = pd.read_excel("../data/raw/KNBS/housing_survey/Chapter-5-Housing-Characteristics-Amenities-and-Adequacy.xlsx",
+    sdf = pd.read_excel(housing_char,
                         sheet_name="Table 5.8",
                         skiprows=1,
                         usecols="A:N"
@@ -172,7 +199,7 @@ def cookstove_dataset(data):
                                                 /(sdf.loc["Ordinary Charcoal Jiko",:]
                                                   +sdf.loc["Improved Charcoal Jiko",:])) 
     # load urban/rural fraction
-    urdf = pd.read_excel("../data/raw/KNBS/housing_survey/Chapter-3-Household-Demographic-and-Economic-Characteristics.xlsx",
+    urdf = pd.read_excel(housing_dem,
                         sheet_name="Table 3.5",
                         skiprows=2,
                         usecols="A:D"
@@ -235,7 +262,7 @@ def cookstove_dataset(data):
     for i,s in enumerate(scenarios):
         
         # get string for national data
-        file = ("../data/raw/nat_scens/run"+str((i+1))
+        file = (nat_scens+"run"+str((i+1))
                 +"/TotalTechnologyAnnualActivity.csv")# str((i+1))
         # load activity data for national scenario
         df = pd.read_csv(file)
@@ -335,7 +362,7 @@ def cookstove_dataset(data):
             
             ### adjusting addition to match local circumstances
             # load datasets shaping prioritization
-            ela = pd.read_csv("../data/raw/others/electricity_access.csv",
+            ela = pd.read_csv(el_access,
                               usecols=[2,4,5,6,7],
                               index_col=[0],
                               keep_default_na=False
@@ -343,7 +370,7 @@ def cookstove_dataset(data):
             ela.index.names = ["REGION"]
             ela.columns = ela.columns.astype(int)
             
-            ms = pd.read_csv("../data/raw/others/market_segmentation.csv",
+            ms = pd.read_csv(market_seg,
                               usecols=[3,4,5,6,7,8],
                               index_col=[0],
                               keep_default_na=False
@@ -478,7 +505,7 @@ def cookstove_dataset(data):
             ### adjusting addition to match local circumstances
             
             # load datasets shaping prioritization
-            ela = pd.read_csv("../data/raw/others/electricity_access.csv",
+            ela = pd.read_csv(el_access,
                               usecols=[2,4,5,6,7],
                               index_col=[0],
                               keep_default_na=False
@@ -486,7 +513,7 @@ def cookstove_dataset(data):
             ela.index.names = ["REGION"]
             ela.columns = ela.columns.astype(int)
             
-            ms = pd.read_csv("../data/raw/others/market_segmentation.csv",
+            ms = pd.read_csv(market_seg,
                               usecols=[3,4,5,6,7,8],
                               index_col=[0],
                               keep_default_na=False

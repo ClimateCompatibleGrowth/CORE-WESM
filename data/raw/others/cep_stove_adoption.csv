@@ -1,0 +1,474 @@
+COUNTY,SCENARIO,AREA,YEAR,TECHNOLOGY,VALUE
+Kiambu,Baseline,Rural,2023,Biogas technology,1
+Kiambu,Baseline,Rural,2023,Charcoal ICS,30
+Kiambu,Baseline,Rural,2023,Electric Stove (coil/induction),1
+Kiambu,Baseline,Rural,2023,Kerosene,2
+Kiambu,Baseline,Rural,2023,LPG Meko,53
+Kiambu,Baseline,Rural,2023,LPG Stove,28
+Kiambu,Baseline,Rural,2023,Metallic Charcoal stove,11
+Kiambu,Baseline,Rural,2023,TSOF,49
+Kiambu,Baseline,Rural,2023,Wood ICS,12
+Kiambu,Baseline,Rural,2028,Bioethanol,4
+Kiambu,Baseline,Rural,2028,Biogas technology,1.25
+Kiambu,Baseline,Rural,2028,Charcoal ICS,23
+Kiambu,Baseline,Rural,2028,EPC,1
+Kiambu,Baseline,Rural,2028,Electric Stove (coil/induction),1.5
+Kiambu,Baseline,Rural,2028,Kerosene,1
+Kiambu,Baseline,Rural,2028,LPG Meko,54
+Kiambu,Baseline,Rural,2028,LPG Stove,32
+Kiambu,Baseline,Rural,2028,Metallic Charcoal stove,8
+Kiambu,Baseline,Rural,2028,TSOF,37
+Kiambu,Baseline,Rural,2028,Wood ICS,14
+Kiambu,Baseline,Rural,2033,Bioethanol,8
+Kiambu,Baseline,Rural,2033,Biogas technology,1.5
+Kiambu,Baseline,Rural,2033,Charcoal ICS,15
+Kiambu,Baseline,Rural,2033,EPC,2
+Kiambu,Baseline,Rural,2033,Electric Stove (coil/induction),2
+Kiambu,Baseline,Rural,2033,LPG Meko,55
+Kiambu,Baseline,Rural,2033,LPG Stove,35
+Kiambu,Baseline,Rural,2033,Metallic Charcoal stove,5
+Kiambu,Baseline,Rural,2033,TSOF,25
+Kiambu,Baseline,Rural,2033,Wood ICS,16
+Kiambu,Baseline,Urban,2023,Biogas technology,0.3
+Kiambu,Baseline,Urban,2023,Charcoal ICS,18
+Kiambu,Baseline,Urban,2023,Electric Stove (coil/induction),2.5
+Kiambu,Baseline,Urban,2023,Kerosene,11
+Kiambu,Baseline,Urban,2023,LPG Meko,52
+Kiambu,Baseline,Urban,2023,LPG Stove,36
+Kiambu,Baseline,Urban,2023,Metallic Charcoal stove,16
+Kiambu,Baseline,Urban,2023,TSOF,20
+Kiambu,Baseline,Urban,2023,Wood ICS,4
+Kiambu,Baseline,Urban,2028,Bioethanol,4
+Kiambu,Baseline,Urban,2028,Biogas technology,0.4
+Kiambu,Baseline,Urban,2028,Charcoal ICS,14
+Kiambu,Baseline,Urban,2028,EPC,1.5
+Kiambu,Baseline,Urban,2028,Electric Stove (coil/induction),3.3
+Kiambu,Baseline,Urban,2028,Kerosene,5.5
+Kiambu,Baseline,Urban,2028,LPG Meko,53
+Kiambu,Baseline,Urban,2028,LPG Stove,37
+Kiambu,Baseline,Urban,2028,Metallic Charcoal stove,10.5
+Kiambu,Baseline,Urban,2028,TSOF,10
+Kiambu,Baseline,Urban,2028,Wood ICS,9.5
+Kiambu,Baseline,Urban,2033,Bioethanol,8
+Kiambu,Baseline,Urban,2033,Biogas technology,0.4
+Kiambu,Baseline,Urban,2033,Charcoal ICS,10
+Kiambu,Baseline,Urban,2033,EPC,3
+Kiambu,Baseline,Urban,2033,Electric Stove (coil/induction),4
+Kiambu,Baseline,Urban,2033,LPG Meko,54
+Kiambu,Baseline,Urban,2033,LPG Stove,38
+Kiambu,Baseline,Urban,2033,Metallic Charcoal stove,5
+Kiambu,Baseline,Urban,2033,Wood ICS,15
+Kiambu,Policy,Rural,2023,Biogas,1
+Kiambu,Policy,Rural,2023,Charcoal ICS,30
+Kiambu,Policy,Rural,2023,Electric (coil/induction),1
+Kiambu,Policy,Rural,2023,Kerosene,2
+Kiambu,Policy,Rural,2023,LPG Meko,53
+Kiambu,Policy,Rural,2023,LPG Stove,28
+Kiambu,Policy,Rural,2023,Metallic Charcoal stove,11
+Kiambu,Policy,Rural,2023,TSOF,49
+Kiambu,Policy,Rural,2023,Wood ICS,12
+Kiambu,Policy,Rural,2028,Bio-Ethanol,7.5
+Kiambu,Policy,Rural,2028,Biogas,2
+Kiambu,Policy,Rural,2028,Charcoal ICS,20
+Kiambu,Policy,Rural,2028,EPC,1.3
+Kiambu,Policy,Rural,2028,Electric (coil/induction),1.8
+Kiambu,Policy,Rural,2028,Kerosene,1
+Kiambu,Policy,Rural,2028,LPG Meko,54
+Kiambu,Policy,Rural,2028,LPG Stove,32
+Kiambu,Policy,Rural,2028,Metallic Charcoal stove,5.5
+Kiambu,Policy,Rural,2028,TSOF,32
+Kiambu,Policy,Rural,2028,Wood ICS,19
+Kiambu,Policy,Rural,2033,Bio-Ethanol,15
+Kiambu,Policy,Rural,2033,Biogas,3
+Kiambu,Policy,Rural,2033,Charcoal ICS,10
+Kiambu,Policy,Rural,2033,EPC,3
+Kiambu,Policy,Rural,2033,Electric (coil/induction),3
+Kiambu,Policy,Rural,2033,LPG Meko,55
+Kiambu,Policy,Rural,2033,LPG Stove,35
+Kiambu,Policy,Rural,2033,TSOF,15
+Kiambu,Policy,Rural,2033,Wood ICS,25
+Kiambu,Policy,Urban,2023,Biogas,0.3
+Kiambu,Policy,Urban,2023,Charcoal ICS,18
+Kiambu,Policy,Urban,2023,Electric (coil/induction),2.5
+Kiambu,Policy,Urban,2023,Kerosene,11
+Kiambu,Policy,Urban,2023,LPG Meko,52
+Kiambu,Policy,Urban,2023,LPG Stove,36
+Kiambu,Policy,Urban,2023,Metallic Charcoal stove,16
+Kiambu,Policy,Urban,2023,TSOF,20
+Kiambu,Policy,Urban,2023,Wood ICS,4
+Kiambu,Policy,Urban,2028,Bio-Ethanol,10
+Kiambu,Policy,Urban,2028,Biogas,0.4
+Kiambu,Policy,Urban,2028,Charcoal ICS,14
+Kiambu,Policy,Urban,2028,EPC,2
+Kiambu,Policy,Urban,2028,Electric (coil/induction),3.8
+Kiambu,Policy,Urban,2028,Kerosene,5.5
+Kiambu,Policy,Urban,2028,LPG Meko,54
+Kiambu,Policy,Urban,2028,LPG Stove,41
+Kiambu,Policy,Urban,2028,Metallic Charcoal stove,8
+Kiambu,Policy,Urban,2028,TSOF,10
+Kiambu,Policy,Urban,2028,Wood ICS,6
+Kiambu,Policy,Urban,2033,Bio-Ethanol,15
+Kiambu,Policy,Urban,2033,Biogas,0.5
+Kiambu,Policy,Urban,2033,Charcoal ICS,10
+Kiambu,Policy,Urban,2033,EPC,4
+Kiambu,Policy,Urban,2033,Electric (coil/induction),5
+Kiambu,Policy,Urban,2033,LPG Meko,55
+Kiambu,Policy,Urban,2033,LPG Stove,45
+Kiambu,Policy,Urban,2033,Wood ICS,8
+Kiambu,SDG,Rural,2023,Biogas,1
+Kiambu,SDG,Rural,2023,Charcoal ICS,30
+Kiambu,SDG,Rural,2023,Electric (coil/induction),1
+Kiambu,SDG,Rural,2023,Kerosene,2
+Kiambu,SDG,Rural,2023,LPG Meko,53
+Kiambu,SDG,Rural,2023,LPG Stove,28
+Kiambu,SDG,Rural,2023,Metallic Charcoal stove,11
+Kiambu,SDG,Rural,2023,TSOF,49
+Kiambu,SDG,Rural,2023,Wood ICS,12
+Kiambu,SDG,Rural,2028,Bio-Ethanol,30
+Kiambu,SDG,Rural,2028,Biogas,1.5
+Kiambu,SDG,Rural,2028,EPC,2
+Kiambu,SDG,Rural,2028,Electric (coil/induction),2
+Kiambu,SDG,Rural,2028,LPG Meko,50
+Kiambu,SDG,Rural,2028,LPG Stove,42
+Kiambu,SDG,Rural,2033,Bio-Ethanol,40
+Kiambu,SDG,Rural,2033,Biogas,2
+Kiambu,SDG,Rural,2033,EPC,3
+Kiambu,SDG,Rural,2033,Electric (coil/induction),3
+Kiambu,SDG,Rural,2033,LPG Meko,45
+Kiambu,SDG,Rural,2033,LPG Stove,55
+Kiambu,SDG,Urban,2023,Biogas,0.3
+Kiambu,SDG,Urban,2023,Charcoal ICS,18
+Kiambu,SDG,Urban,2023,Electric (coil/induction),2.5
+Kiambu,SDG,Urban,2023,Kerosene,11
+Kiambu,SDG,Urban,2023,LPG Meko,52
+Kiambu,SDG,Urban,2023,LPG Stove,36
+Kiambu,SDG,Urban,2023,Metallic Charcoal stove,16
+Kiambu,SDG,Urban,2023,TSOF,20
+Kiambu,SDG,Urban,2023,Wood ICS,4
+Kiambu,SDG,Urban,2028,Bio-Ethanol,20
+Kiambu,SDG,Urban,2028,Biogas,0.5
+Kiambu,SDG,Urban,2028,EPC,5
+Kiambu,SDG,Urban,2028,Electric (coil/induction),5
+Kiambu,SDG,Urban,2028,LPG Meko,54
+Kiambu,SDG,Urban,2028,LPG Stove,60
+Kiambu,SDG,Urban,2033,Bio-Ethanol,30
+Kiambu,SDG,Urban,2033,Biogas,0.7
+Kiambu,SDG,Urban,2033,EPC,8
+Kiambu,SDG,Urban,2033,Electric (coil/induction),10
+Kiambu,SDG,Urban,2033,LPG Meko,40
+Kiambu,SDG,Urban,2033,LPG Stove,60
+Kilifi,Baseline,Rural,2023,Biogas,0.1
+Kilifi,Baseline,Rural,2023,Charcoal ICS,19
+Kilifi,Baseline,Rural,2023,Gasifier Stove,2.5
+Kilifi,Baseline,Rural,2023,Kerosene,6
+Kilifi,Baseline,Rural,2023,LPG Meko,2
+Kilifi,Baseline,Rural,2023,Metallic Charcoal stove,19
+Kilifi,Baseline,Rural,2023,TSOF,97
+Kilifi,Baseline,Rural,2023,Wood ICS,21
+Kilifi,Baseline,Rural,2028,Bio-Ethanol,2.5
+Kilifi,Baseline,Rural,2028,Biogas,0.2
+Kilifi,Baseline,Rural,2028,Charcoal ICS,22
+Kilifi,Baseline,Rural,2028,EPC,0.5
+Kilifi,Baseline,Rural,2028,Electric Stove (coil/induction),0.5
+Kilifi,Baseline,Rural,2028,Gasifier Stove,5
+Kilifi,Baseline,Rural,2028,Kerosene,3
+Kilifi,Baseline,Rural,2028,LPG Meko,5
+Kilifi,Baseline,Rural,2028,LPG Stove,1
+Kilifi,Baseline,Rural,2028,Metallic Charcoal stove,14.5
+Kilifi,Baseline,Rural,2028,TSOF,71
+Kilifi,Baseline,Rural,2028,Wood ICS,33
+Kilifi,Baseline,Rural,2033,Bio-Ethanol,5
+Kilifi,Baseline,Rural,2033,Biogas,0.3
+Kilifi,Baseline,Rural,2033,Charcoal ICS,25
+Kilifi,Baseline,Rural,2033,EPC,1
+Kilifi,Baseline,Rural,2033,Electric Stove (coil/induction),1
+Kilifi,Baseline,Rural,2033,LPG Meko,8
+Kilifi,Baseline,Rural,2033,LPG Stove,2
+Kilifi,Baseline,Rural,2033,Metallic Charcoal stove,10
+Kilifi,Baseline,Rural,2033,TSOF,45
+Kilifi,Baseline,Rural,2033,Wood ICS,45
+Kilifi,Baseline,Urban,2023,Charcoal ICS,79
+Kilifi,Baseline,Urban,2023,Electric Stove (coil/induction),3
+Kilifi,Baseline,Urban,2023,Gasifier Stove,2.5
+Kilifi,Baseline,Urban,2023,Kerosene,11
+Kilifi,Baseline,Urban,2023,LPG Meko,27
+Kilifi,Baseline,Urban,2023,LPG Stove,8
+Kilifi,Baseline,Urban,2023,Metallic Charcoal stove,39
+Kilifi,Baseline,Urban,2023,TSOF,42
+Kilifi,Baseline,Urban,2023,Wood ICS,11
+Kilifi,Baseline,Urban,2028,Bio-Ethanol,5
+Kilifi,Baseline,Urban,2028,Charcoal ICS,82
+Kilifi,Baseline,Urban,2028,EPC,1.5
+Kilifi,Baseline,Urban,2028,Electric Stove (coil/induction),3.5
+Kilifi,Baseline,Urban,2028,Gasifier Stove,5
+Kilifi,Baseline,Urban,2028,Kerosene,5.5
+Kilifi,Baseline,Urban,2028,LPG Meko,31
+Kilifi,Baseline,Urban,2028,LPG Stove,9
+Kilifi,Baseline,Urban,2028,Metallic Charcoal stove,24.5
+Kilifi,Baseline,Urban,2028,TSOF,31
+Kilifi,Baseline,Urban,2028,Wood ICS,20.5
+Kilifi,Baseline,Urban,2033,Bio-Ethanol,10
+Kilifi,Baseline,Urban,2033,Charcoal ICS,85
+Kilifi,Baseline,Urban,2033,EPC,3
+Kilifi,Baseline,Urban,2033,Electric Stove (coil/induction),4
+Kilifi,Baseline,Urban,2033,LPG Meko,35
+Kilifi,Baseline,Urban,2033,LPG Stove,10
+Kilifi,Baseline,Urban,2033,Metallic Charcoal stove,10
+Kilifi,Baseline,Urban,2033,TSOF,20
+Kilifi,Baseline,Urban,2033,Wood ICS,30
+Kilifi,Policy,Rural,2023,Biogas,0.1
+Kilifi,Policy,Rural,2023,Charcoal ICS,19
+Kilifi,Policy,Rural,2023,Gasifier Stove,7.5
+Kilifi,Policy,Rural,2023,Kerosene,6
+Kilifi,Policy,Rural,2023,LPG Meko,2
+Kilifi,Policy,Rural,2023,Metallic Charcoal stove,19
+Kilifi,Policy,Rural,2023,TSOF,97
+Kilifi,Policy,Rural,2023,Wood ICS,21
+Kilifi,Policy,Rural,2028,Bio-Ethanol,5
+Kilifi,Policy,Rural,2028,Biogas,0.5
+Kilifi,Policy,Rural,2028,Charcoal ICS,14.5
+Kilifi,Policy,Rural,2028,EPC,1.5
+Kilifi,Policy,Rural,2028,Electric (coil/induction),1
+Kilifi,Policy,Rural,2028,Gasifier Stove,15
+Kilifi,Policy,Rural,2028,Kerosene,3
+Kilifi,Policy,Rural,2028,LPG Meko,8.5
+Kilifi,Policy,Rural,2028,LPG Stove,2.5
+Kilifi,Policy,Rural,2028,Metallic Charcoal stove,9.5
+Kilifi,Policy,Rural,2028,TSOF,48.5
+Kilifi,Policy,Rural,2028,Wood ICS,53
+Kilifi,Policy,Rural,2033,Bio-Ethanol,10
+Kilifi,Policy,Rural,2033,Biogas,0.8
+Kilifi,Policy,Rural,2033,Charcoal ICS,10
+Kilifi,Policy,Rural,2033,EPC,3
+Kilifi,Policy,Rural,2033,Electric (coil/induction),2
+Kilifi,Policy,Rural,2033,LPG Meko,15
+Kilifi,Policy,Rural,2033,LPG Stove,5
+Kilifi,Policy,Rural,2033,Wood ICS,85
+Kilifi,Policy,Urban,2023,Charcoal ICS,79
+Kilifi,Policy,Urban,2023,Electric (coil/induction),3
+Kilifi,Policy,Urban,2023,Gasifier Stove,5
+Kilifi,Policy,Urban,2023,Kerosene,11
+Kilifi,Policy,Urban,2023,LPG Meko,27
+Kilifi,Policy,Urban,2023,LPG Stove,8
+Kilifi,Policy,Urban,2023,Metallic Charcoal stove,39
+Kilifi,Policy,Urban,2023,TSOF,42
+Kilifi,Policy,Urban,2023,Wood ICS,11
+Kilifi,Policy,Urban,2028,Bio-Ethanol,5
+Kilifi,Policy,Urban,2028,Charcoal ICS,72
+Kilifi,Policy,Urban,2028,EPC,6
+Kilifi,Policy,Urban,2028,Electric (coil/induction),4
+Kilifi,Policy,Urban,2028,Gasifier Stove,10
+Kilifi,Policy,Urban,2028,Kerosene,5.5
+Kilifi,Policy,Urban,2028,LPG Meko,33.5
+Kilifi,Policy,Urban,2028,LPG Stove,10
+Kilifi,Policy,Urban,2028,Metallic Charcoal stove,19.5
+Kilifi,Policy,Urban,2028,TSOF,21
+Kilifi,Policy,Urban,2028,Wood ICS,15.5
+Kilifi,Policy,Urban,2033,Bio-Ethanol,10
+Kilifi,Policy,Urban,2033,Charcoal ICS,65
+Kilifi,Policy,Urban,2033,EPC,12
+Kilifi,Policy,Urban,2033,Electric (coil/induction),5
+Kilifi,Policy,Urban,2033,LPG Meko,40
+Kilifi,Policy,Urban,2033,LPG Stove,12
+Kilifi,Policy,Urban,2033,Wood ICS,20
+Kilifi,SDG,Rural,2023,Biogas,0.1
+Kilifi,SDG,Rural,2023,Charcoal ICS,19
+Kilifi,SDG,Rural,2023,Kerosene,6
+Kilifi,SDG,Rural,2023,LPG Meko,2
+Kilifi,SDG,Rural,2023,Metallic Charcoal stove,19
+Kilifi,SDG,Rural,2023,TSOF,97
+Kilifi,SDG,Rural,2023,Wood ICS,21
+Kilifi,SDG,Rural,2028,Bio-Ethanol,25
+Kilifi,SDG,Rural,2028,Biogas,1.6
+Kilifi,SDG,Rural,2028,EPC,2.5
+Kilifi,SDG,Rural,2028,Electric (coil/induction),2.5
+Kilifi,SDG,Rural,2028,LPG Meko,18.5
+Kilifi,SDG,Rural,2028,LPG Stove,5
+Kilifi,SDG,Rural,2033,Bio-Ethanol,50
+Kilifi,SDG,Rural,2033,Biogas,3
+Kilifi,SDG,Rural,2033,EPC,5
+Kilifi,SDG,Rural,2033,Electric (coil/induction),5
+Kilifi,SDG,Rural,2033,LPG Meko,35
+Kilifi,SDG,Rural,2033,LPG Stove,10
+Kilifi,SDG,Urban,2023,Charcoal ICS,79
+Kilifi,SDG,Urban,2023,Electric (coil/induction),3
+Kilifi,SDG,Urban,2023,Kerosene,11
+Kilifi,SDG,Urban,2023,LPG Meko,27
+Kilifi,SDG,Urban,2023,LPG Stove,8
+Kilifi,SDG,Urban,2023,Metallic Charcoal stove,39
+Kilifi,SDG,Urban,2023,TSOF,42
+Kilifi,SDG,Urban,2023,Wood ICS,11
+Kilifi,SDG,Urban,2028,Bio-Ethanol,25
+Kilifi,SDG,Urban,2028,EPC,7.5
+Kilifi,SDG,Urban,2028,Electric (coil/induction),5.5
+Kilifi,SDG,Urban,2028,LPG Meko,33.5
+Kilifi,SDG,Urban,2028,LPG Stove,14
+Kilifi,SDG,Urban,2033,Bio-Ethanol,50
+Kilifi,SDG,Urban,2033,EPC,15
+Kilifi,SDG,Urban,2033,Electric (coil/induction),8
+Kilifi,SDG,Urban,2033,LPG Meko,40
+Kilifi,SDG,Urban,2033,LPG Stove,20
+Nyandarua,Baseline,Rural,2023,Biogas technology,0.3
+Nyandarua,Baseline,Rural,2023,Charcoal ICS,29
+Nyandarua,Baseline,Rural,2023,Kerosene,9
+Nyandarua,Baseline,Rural,2023,LPG Meko,38
+Nyandarua,Baseline,Rural,2023,LPG Stove,7
+Nyandarua,Baseline,Rural,2023,Metallic Charcoal stove,29
+Nyandarua,Baseline,Rural,2023,TSOF,73
+Nyandarua,Baseline,Rural,2023,Wood ICS,11
+Nyandarua,Baseline,Rural,2028,Bioethanol,2.5
+Nyandarua,Baseline,Rural,2028,Biogas technology,0.4
+Nyandarua,Baseline,Rural,2028,Charcoal ICS,32
+Nyandarua,Baseline,Rural,2028,EPC,0.5
+Nyandarua,Baseline,Rural,2028,Electric Stove (coil/induction),1
+Nyandarua,Baseline,Rural,2028,Gasifier Stove,2.5
+Nyandarua,Baseline,Rural,2028,Kerosene,5
+Nyandarua,Baseline,Rural,2028,LPG Meko,42
+Nyandarua,Baseline,Rural,2028,LPG Stove,10
+Nyandarua,Baseline,Rural,2028,Metallic Charcoal stove,22
+Nyandarua,Baseline,Rural,2028,TSOF,49
+Nyandarua,Baseline,Rural,2028,Wood ICS,31
+Nyandarua,Baseline,Rural,2033,Bioethanol,5
+Nyandarua,Baseline,Rural,2033,Biogas technology,0.4
+Nyandarua,Baseline,Rural,2033,Charcoal ICS,35
+Nyandarua,Baseline,Rural,2033,EPC,1
+Nyandarua,Baseline,Rural,2033,Electric Stove (coil/induction),2
+Nyandarua,Baseline,Rural,2033,Gasifier Stove,5
+Nyandarua,Baseline,Rural,2033,LPG Meko,45
+Nyandarua,Baseline,Rural,2033,LPG Stove,12
+Nyandarua,Baseline,Rural,2033,Metallic Charcoal stove,15
+Nyandarua,Baseline,Rural,2033,TSOF,25
+Nyandarua,Baseline,Rural,2033,Wood ICS,50
+Nyandarua,Baseline,Urban,2023,Charcoal ICS,30
+Nyandarua,Baseline,Urban,2023,Electric Stove (coil/induction),2
+Nyandarua,Baseline,Urban,2023,Kerosene,1
+Nyandarua,Baseline,Urban,2023,LPG Meko,50
+Nyandarua,Baseline,Urban,2023,LPG Stove,9
+Nyandarua,Baseline,Urban,2023,Metallic Charcoal stove,50
+Nyandarua,Baseline,Urban,2023,TSOF,65
+Nyandarua,Baseline,Urban,2023,Wood ICS,7
+Nyandarua,Baseline,Urban,2028,Bioethanol,5
+Nyandarua,Baseline,Urban,2028,Charcoal ICS,33
+Nyandarua,Baseline,Urban,2028,EPC,1.5
+Nyandarua,Baseline,Urban,2028,Electric Stove (coil/induction),3.5
+Nyandarua,Baseline,Urban,2028,Gasifier Stove,5
+Nyandarua,Baseline,Urban,2028,Kerosene,0.5
+Nyandarua,Baseline,Urban,2028,LPG Meko,55
+Nyandarua,Baseline,Urban,2028,LPG Stove,15
+Nyandarua,Baseline,Urban,2028,Metallic Charcoal stove,37.5
+Nyandarua,Baseline,Urban,2028,TSOF,40
+Nyandarua,Baseline,Urban,2028,Wood ICS,18.5
+Nyandarua,Baseline,Urban,2033,Bioethanol,10
+Nyandarua,Baseline,Urban,2033,Charcoal ICS,35
+Nyandarua,Baseline,Urban,2033,EPC,3
+Nyandarua,Baseline,Urban,2033,Electric Stove (coil/induction),5
+Nyandarua,Baseline,Urban,2033,Gasifier Stove,10
+Nyandarua,Baseline,Urban,2033,LPG Meko,60
+Nyandarua,Baseline,Urban,2033,LPG Stove,20
+Nyandarua,Baseline,Urban,2033,Metallic Charcoal stove,25
+Nyandarua,Baseline,Urban,2033,TSOF,15
+Nyandarua,Baseline,Urban,2033,Wood ICS,30
+Nyandarua,Policy,Rural,2023,Biogas,0.3
+Nyandarua,Policy,Rural,2023,Charcoal ICS,29
+Nyandarua,Policy,Rural,2023,Kerosene,9
+Nyandarua,Policy,Rural,2023,LPG Meko,38
+Nyandarua,Policy,Rural,2023,LPG Stove,7
+Nyandarua,Policy,Rural,2023,Metallic Charcoal stove,29
+Nyandarua,Policy,Rural,2023,TSOF,73
+Nyandarua,Policy,Rural,2023,Wood ICS,11
+Nyandarua,Policy,Rural,2028,Bio-Ethanol,2
+Nyandarua,Policy,Rural,2028,Biogas,0.4
+Nyandarua,Policy,Rural,2028,Charcoal ICS,35
+Nyandarua,Policy,Rural,2028,EPC,1
+Nyandarua,Policy,Rural,2028,Electric (coil/induction),1
+Nyandarua,Policy,Rural,2028,Gasifier Stove,15
+Nyandarua,Policy,Rural,2028,Kerosene,4
+Nyandarua,Policy,Rural,2028,LPG Meko,45
+Nyandarua,Policy,Rural,2028,LPG Stove,10
+Nyandarua,Policy,Rural,2028,Metallic Charcoal stove,10
+Nyandarua,Policy,Rural,2028,TSOF,30
+Nyandarua,Policy,Rural,2028,Wood ICS,50
+Nyandarua,Policy,Rural,2033,Bio-Ethanol,5
+Nyandarua,Policy,Rural,2033,Biogas,0.5
+Nyandarua,Policy,Rural,2033,Charcoal ICS,40
+Nyandarua,Policy,Rural,2033,EPC,2
+Nyandarua,Policy,Rural,2033,Electric (coil/induction),2
+Nyandarua,Policy,Rural,2033,Gasifier Stove,20
+Nyandarua,Policy,Rural,2033,Kerosene,0
+Nyandarua,Policy,Rural,2033,LPG Meko,55
+Nyandarua,Policy,Rural,2033,LPG Stove,12
+Nyandarua,Policy,Rural,2033,Metallic Charcoal stove,5
+Nyandarua,Policy,Rural,2033,TSOF,5
+Nyandarua,Policy,Rural,2033,Wood ICS,50
+Nyandarua,Policy,Urban,2023,Charcoal ICS,30
+Nyandarua,Policy,Urban,2023,Electric (coil/induction),2
+Nyandarua,Policy,Urban,2023,Kerosene,1
+Nyandarua,Policy,Urban,2023,LPG Meko,50
+Nyandarua,Policy,Urban,2023,LPG Stove,9
+Nyandarua,Policy,Urban,2023,Metallic Charcoal stove,50
+Nyandarua,Policy,Urban,2023,TSOF,65
+Nyandarua,Policy,Urban,2023,Wood ICS,7
+Nyandarua,Policy,Urban,2028,Bio-Ethanol,4
+Nyandarua,Policy,Urban,2028,Charcoal ICS,25
+Nyandarua,Policy,Urban,2028,EPC,4
+Nyandarua,Policy,Urban,2028,Electric (coil/induction),4
+Nyandarua,Policy,Urban,2028,Gasifier Stove,16
+Nyandarua,Policy,Urban,2028,Kerosene,2
+Nyandarua,Policy,Urban,2028,LPG Meko,60
+Nyandarua,Policy,Urban,2028,LPG Stove,15
+Nyandarua,Policy,Urban,2028,Metallic Charcoal stove,20
+Nyandarua,Policy,Urban,2028,TSOF,25
+Nyandarua,Policy,Urban,2028,Wood ICS,40
+Nyandarua,Policy,Urban,2033,Bio-Ethanol,15
+Nyandarua,Policy,Urban,2033,Charcoal ICS,20
+Nyandarua,Policy,Urban,2033,EPC,6
+Nyandarua,Policy,Urban,2033,Electric (coil/induction),6
+Nyandarua,Policy,Urban,2033,Gasifier Stove,20
+Nyandarua,Policy,Urban,2033,LPG Meko,70
+Nyandarua,Policy,Urban,2033,LPG Stove,25
+Nyandarua,Policy,Urban,2033,Metallic Charcoal stove,5
+Nyandarua,Policy,Urban,2033,Wood ICS,50
+Nyandarua,SDG,Rural,2023,Biogas,0.3
+Nyandarua,SDG,Rural,2023,Charcoal ICS,29
+Nyandarua,SDG,Rural,2023,Kerosene,9
+Nyandarua,SDG,Rural,2023,LPG Meko,38
+Nyandarua,SDG,Rural,2023,LPG Stove,7
+Nyandarua,SDG,Rural,2023,Metallic Charcoal stove,29
+Nyandarua,SDG,Rural,2023,TSOF,73
+Nyandarua,SDG,Rural,2023,Wood ICS,11
+Nyandarua,SDG,Rural,2028,Bio-Ethanol,5
+Nyandarua,SDG,Rural,2028,Biogas,0.7
+Nyandarua,SDG,Rural,2028,EPC,2
+Nyandarua,SDG,Rural,2028,Electric (coil/induction),2
+Nyandarua,SDG,Rural,2028,Gasifier Stove,40
+Nyandarua,SDG,Rural,2028,LPG Meko,70
+Nyandarua,SDG,Rural,2028,LPG Stove,30
+Nyandarua,SDG,Rural,2028,Wood ICS,30
+Nyandarua,SDG,Rural,2033,Bio-Ethanol,10
+Nyandarua,SDG,Rural,2033,Biogas,1
+Nyandarua,SDG,Rural,2033,EPC,5
+Nyandarua,SDG,Rural,2033,Electric (coil/induction),5
+Nyandarua,SDG,Rural,2033,Gasifier Stove,50
+Nyandarua,SDG,Rural,2033,LPG Meko,60
+Nyandarua,SDG,Rural,2033,LPG Stove,30
+Nyandarua,SDG,Rural,2033,Wood ICS,25
+Nyandarua,SDG,Urban,2023,Charcoal ICS,30
+Nyandarua,SDG,Urban,2023,Electric (coil/induction),2
+Nyandarua,SDG,Urban,2023,Kerosene,1
+Nyandarua,SDG,Urban,2023,LPG Meko,50
+Nyandarua,SDG,Urban,2023,LPG Stove,9
+Nyandarua,SDG,Urban,2023,Metallic Charcoal stove,50
+Nyandarua,SDG,Urban,2023,TSOF,65
+Nyandarua,SDG,Urban,2023,Wood ICS,7
+Nyandarua,SDG,Urban,2028,Bio-Ethanol,20
+Nyandarua,SDG,Urban,2028,EPC,5
+Nyandarua,SDG,Urban,2028,Electric (coil/induction),5
+Nyandarua,SDG,Urban,2028,Gasifier Stove,25
+Nyandarua,SDG,Urban,2028,LPG Meko,60
+Nyandarua,SDG,Urban,2028,LPG Stove,40
+Nyandarua,SDG,Urban,2033,Bio-Ethanol,25
+Nyandarua,SDG,Urban,2033,EPC,10
+Nyandarua,SDG,Urban,2033,Electric (coil/induction),10
+Nyandarua,SDG,Urban,2033,Gasifier Stove,50
+Nyandarua,SDG,Urban,2033,LPG Meko,50
+Nyandarua,SDG,Urban,2033,LPG Stove,50

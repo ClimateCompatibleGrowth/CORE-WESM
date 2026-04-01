@@ -2,8 +2,6 @@
 
 Workflow script for creating the input data set of and run CORE-WESM 
 
-Copyright (C) 2026 Leonhard Hofbauer, licensed under a MIT license
-
 """
 
 # Load relevant Python libraries
@@ -14,7 +12,7 @@ import pandas as pd
 import data_pipeline_functions as dp
 import run_pipeline_functions as rp
 
-# Suppress certain warnings for better readibility of logs
+# Temporarily suppress certain warnings for better readibility of logs
 warnings.simplefilter(action='ignore', category=FutureWarning)
 warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)
 
@@ -73,7 +71,14 @@ dp.downscale(input_file = pcfg["filepaths"]["national_spreadsheet_file"],
 dp.process_county_model(input_path = pcfg["filepaths"]["downscaled_model_path"],
                         dataconfig_file = pcfg["filepaths"]["data_config_file_NM"],
                         datasets = pcfg["county_processing"]["datasets"],
+                        ft_param = pcfg["filepaths"]["ft_param"],
                         output_path = pcfg["filepaths"]["county_processed_path"],
+                        list_counties = pcfg["filepaths"]["list_counties_file"],
+                        housing_char = pcfg["filepaths"]["housing_char"],
+                        housing_dem = pcfg["filepaths"]["housing_dem"],
+                        nat_scens = pcfg["filepaths"]["nat_scens"],
+                        el_access = pcfg["filepaths"]["el_access"],
+                        market_seg = pcfg["filepaths"]["market_seg"],
                         overwrite=True
                         )
 
@@ -85,7 +90,7 @@ rp.run_model(dataconfig_file = pcfg["filepaths"]["data_config_file_CW"],
               model_file_path= acfg["runs"]["model_file"],
               scenario_list = acfg["scenarios"],
               spatial_config = acfg["runs"]["spatial_config"],
-              output_path = pcfg["filepaths"]["results_path"]+rcfg["name"]+"/"+rcfg["run_id"],
+              output_path = pcfg["filepaths"]["results_path"]+rcfg["name"]+"/"+rcfg["id"],
               rename_set = {"COMMODITY":"FUEL"},
               glpk_dir = pcfg["filepaths"]["glpk_dir"],
               agg_years = acfg["runs"]["agg_years"],

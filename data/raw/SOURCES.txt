@@ -1,0 +1,65 @@
+File(s): shapefiles/*
+Source: Kenya - Subnational Administrative Boundaries, 2025
+Link: https://data.humdata.org/dataset/geoboundaries-admin-boundaries-for-kenya
+Last accessed: 2026-03-26
+License: ODC-ODbL
+
+
+File(s): others/electricity_access.csv
+Source: Fields et al. (2025)
+Link: https://www.sciencedirect.com/science/article/pii/S2352340925002884
+Last accessed: 2026-03-26
+License: CC-BY-4.0
+
+File(s): others/market_segementation.csv
+Source: Kenya National Cooking Transition Strategy
+Link: https://www.energy.go.ke/sites/default/files/KAWI/Publication/Kenya%20National%20Cooking%20Transition%20Strategy_Signed.pdf
+Last accessed: 2026-03-26
+License: –
+
+File(s): others/cep_stove_adoption.csv
+Source: County Energy Plans of Nyandarua, Kilifi, Kiambu
+Link: –
+Last accessed: –
+License: –
+
+File(s): nat_scens/*
+Source: OSeMOSYS modelling results for the KNeCS
+Link: –
+Last accessed: –    
+License: CC-BY-4.0
+
+File(s): national_datafiles/*
+Source: OSeMOSYS Kenya data files
+Link: –
+Last accessed: –
+License: CC-BY-4.0
+
+
+File(s): KNBS/GCP/*
+Source: KNBS, 2023 – Gross County Product
+Link: https://www.knbs.or.ke/wp-content/uploads/2023/10/GCP-report-2023.pdf
+Last accessed: 2026-03-28
+License: –
+
+File(s): KNBS/population/counties_*
+Source: KNBS population projections by county, 2019
+Link: https://www.knbs.or.ke/wp-content/uploads/2023/09/2019-Kenya-population-and-Housing-Census-Summary-Report-on-Kenyas-Population-Projections.pdf
+Last accessed: 2026-03-28
+License: –
+
+
+File(s): KNBS/population/distribution-of-urban-rural-population.*
+Source: KNBS Census, 2019
+Link: https://open.africa/id/dataset/2019-kenya-population-and-housing-census
+Last accessed: 2026-03-26
+License: CC-BY-4.0
+
+
+File(s): KNBS/housing_survey/*
+Source: 2023-24 Kenya Housing Survey - Data Tables
+Link: https://www.knbs.or.ke/reports/2023-24-kenya-housing-survey-basic-report/
+Last accessed: 2026-03-28
+License: –
+
+

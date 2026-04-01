@@ -1,0 +1,4 @@
+# Analysis to perform
+name: "KNeCS" # config file for the analysis needs to be defined
+id: "v00X"
+run_model: True

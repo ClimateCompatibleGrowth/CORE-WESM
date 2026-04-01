@@ -2,12 +2,11 @@
 
 Functions for creating the input data set of CORE-WESM 
 
-Copyright (C) 2026 Leonhard Hofbauer, licensed under a MIT license
-
 """
 
 import os
 import sys
+import shutil
 import logging
 
 import pandas as pd
@@ -560,8 +559,10 @@ def downscale(input_file,
 def process_county_model(dataconfig_file,
                          input_path,
                          datasets,
+                         ft_param,
                          output_path,
-                         overwrite=False):
+                         overwrite=False,
+                         **kwargs):
     """ Integrate county-resolved and other datasets
     
 
@@ -573,6 +574,9 @@ def process_county_model(dataconfig_file,
         File path to the directory with the input model spreadsheet files.
     datasets : list
         List of dataset or other processing steps (strings) to be integrated.
+    ft_param : str
+        File path to the spreadsheet file with the fratoo multi-scale
+        parameters.
     output_path : str
         File path to the directory where the processed model spreadsheet files
         are to be saved.
@@ -604,7 +608,8 @@ def process_county_model(dataconfig_file,
     options = ["cooking"]
     
     if "cooking" in datasets:
-        data = cf.cookstove_dataset(data)
+        data = cf.cookstove_dataset(data,
+                                    **kwargs)
         logger.info("Integrated the 'cooking' dataset/enhancements.")
         
     rem = [e for e in datasets if e not in options]
@@ -612,10 +617,14 @@ def process_county_model(dataconfig_file,
         logger.warning("The following dataset/enhancements keys are not"
                        " implemented and thus have not been integrated: "
                        +", ".join(rem)+".")
-
+        
     
 
     # save data
     cf.save_model(output_path, data, overwrite=overwrite)
+    
+    # copy spreadsheet file with fratoo multi-scale structure to folder
+    shutil.copy(ft_param, output_path+"multiscale_params.xlsx")
+
     
     

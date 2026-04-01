@@ -1,4 +1,9 @@
+"""
 
+Functions for running CORE-WESM 
+
+
+"""
 
 import os
 import logging
@@ -7,11 +12,9 @@ import yaml
 import pandas as pd
 
 # the ospro and fratoo modules need to currently be copied into the folder
-# that also includes this script – these will be packaged in future
+# that also includes this script – these might be packaged in future
 import ospro as op
 
-import graphing_library as gl
-import graphing_library_cooking as glc
 
 logger = logging.getLogger(__name__)
 
@@ -138,10 +141,8 @@ def run_model(dataconfig_file,
         
         # write datafile if to be used with OSeMOSYS cloud, etc. 
         
-        # op.write_datafile(data, "./", pcfg, dcfg)
-        # op.write_spreadsheet(data, "./", pcfg, dcfg)
+
         if solve == "datafile":
-            # FIXME: check, does currently not work
             op.write_datafile(data = data,
                               path = "./",
                               dcfg = dcfg)
@@ -172,7 +173,6 @@ def run_model(dataconfig_file,
         
         ### Process and save results
         
-        # res = op.load_results(pcfg, dcfg, data)
         
             res = op.expand_results(res)
             
@@ -198,10 +198,8 @@ def run_model(dataconfig_file,
             
             # write datafile if to be used with OSeMOSYS cloud, etc. 
             
-            # op.write_datafile(data, "./", pcfg, dcfg)
-            # op.write_spreadsheet(data, "./", pcfg, dcfg)
+
             if solve == "datafile":
-                # FIXME: check, does currently not work
                 op.write_datafile(data = data,
                                   path = "./",
                                   dcfg = dcfg)
@@ -272,209 +270,6 @@ def run_model(dataconfig_file,
                     scenario_list = [v["name"] for v in scenario_list],
                     dcfg = dcfg)
 
-
-def plot_national(input_path,
-                  dataconfig_file,
-                  years_agg_file,
-                  scenario_list,
-                  naming=None):
-            
-    # load data config file
-    with open(dataconfig_file) as s:    
-        try:
-            dcfg = yaml.safe_load(s)
-        except yaml.YAMLError as exc:
-            logger.error(exc) 
-    
-    # load results
-    res = op.load_results(results_path=input_path,
-                          scenario_list = scenario_list,
-                          dcfg=dcfg)
-
-    if naming is not None:
-        gcfg = pd.read_csv(naming)
-        naming = gcfg.set_index("Name")["Description"]
-        col = gcfg.set_index("Description")["Colour"]
-    
-    
-
-    glc.plot_national_overview(results=res,
-                               parameter = "TotalProductionByTechnologyAnnual",
-                               scenarios = scenario_list,
-                               dcfg = dcfg,
-                               naming=naming,
-                               col=col,
-                               agg_years = years_agg_file,
-                               )
-    
-    # gl.plot_tech_sector(results=res,
-    #                     parameter="TotalProductionByTechnologyAnnual",
-    #                     scenario=scenario_list[0],
-    #                      naming = naming,
-    #                      mapping_tech_sector=None,
-    #                      sector = None,
-    #                      geography = None,
-    #                      str_filter = {"TECHNOLOGY":["PWR"]},
-    #                      agg_years=None,
-    #                      xscale=None)
-    
-def plot_counties(input_path,
-                  dataconfig_file,
-                  years_agg_file,
-                  scenario_list,
-                  counties,
-                  list_counties,
-                  naming=None):
-            
-    # load data config file
-    with open(dataconfig_file) as s:    
-        try:
-            dcfg = yaml.safe_load(s)
-        except yaml.YAMLError as exc:
-            logger.error(exc) 
-    
-    # load results
-    res = op.load_results(results_path=input_path,
-                          scenario_list = scenario_list,
-                          dcfg=dcfg)
-
-    if naming is not None:
-        gcfg = pd.read_csv(naming)
-        naming = gcfg.set_index("Name")["Description"]
-        col = gcfg.set_index("Description")["Colour"]
-    
-    glc.plot_counties_map(results=res,
-                         counties=[],
-                         list_counties = list_counties,
-                         shapefile="",
-                         naming = naming,
-                        )
-
-    glc.plot_counties(results=res,
-                               parameter = "TotalProductionByTechnologyAnnual",
-                               scenarios = scenario_list,
-                               counties=counties,
-                               list_counties = list_counties,
-                               dcfg = dcfg,
-                               naming=naming,
-                               col=col,
-                               agg_years = years_agg_file,
-                               )
-    
-def plot_counties_cep(input_path,
-                  dataconfig_file,
-                  years_agg_file,
-                  scenario_list,
-                  counties,
-                  list_counties,
-                  naming=None):
-            
-    # load data config file
-    with open(dataconfig_file) as s:    
-        try:
-            dcfg = yaml.safe_load(s)
-        except yaml.YAMLError as exc:
-            logger.error(exc) 
-    
-    # load results
-    res = op.load_results(results_path=input_path,
-                          scenario_list = scenario_list,
-                          dcfg=dcfg)
-
-    if naming is not None:
-        gcfg = pd.read_csv(naming)
-        naming = gcfg.set_index("Name")["Description"]
-        col = gcfg.set_index("Description")["Colour"]
-    
-        
-    glc.plot_counties_comp(results=res,
-                               parameter = "TotalProductionByTechnologyAnnual",
-                               scenario = "KNeCS",
-                               counties=counties,
-                               list_counties = list_counties,
-                               dcfg = dcfg,
-                               naming=naming,
-                               col=col,
-                               agg_years = years_agg_file,
-                               )
-     
-
-def plot_counties_impact(input_path,
-                  dataconfig_file,
-                  years_agg_file,
-                  scenario_list,
-                  counties,
-                  list_counties,
-                  naming=None):
-            
-    # load data config file
-    with open(dataconfig_file) as s:    
-        try:
-            dcfg = yaml.safe_load(s)
-        except yaml.YAMLError as exc:
-            logger.error(exc) 
-    
-    # load results
-    res = op.load_results(results_path=input_path,
-                          scenario_list = scenario_list,
-                          dcfg=dcfg)
-
-    if naming is not None:
-        gcfg = pd.read_csv(naming)
-        naming = gcfg.set_index("Name")["Description"]
-        col = gcfg.set_index("Description")["Colour"]
-    
-
-     
-    glc.plot_county_impacts(results=res,
-                               parameter = "UseByTechnologyAnnual",
-                               scenarios = scenario_list,
-                               counties=counties,
-                               list_counties = list_counties,
-                               dcfg = dcfg,
-                               naming=naming,
-                               col=col,
-                               agg_years = years_agg_file,
-                               )
-    
-def plot_county(input_path,
-                county,
-                dataconfig_file,
-                tech_to_sector_file,
-                years_agg_file,
-                scenario_list,
-                str_filter=None,
-                naming=None):
-            
-    # load data config file
-    with open(dataconfig_file) as s:    
-        try:
-            dcfg = yaml.safe_load(s)
-        except yaml.YAMLError as exc:
-            logger.error(exc) 
-    
-    # load results
-    res = op.load_results(results_path=input_path,
-                          scenario_list = [v["name"] for v in scenario_list],
-                          dcfg=dcfg)
-
-    if naming is not None:
-        naming = pd.read_excel(naming,sheet_name=None)
-        naming = naming["TechnologiesList"].set_index("Name")["Description"]
-    
-    
-    for s in [v["name"] for v in scenario_list]:
-        gl.plot_tech_sector(results=res,
-                            parameter="ProductionByTechnologyAnnual",
-                            scenario = s,
-                            #sector = "Agriculture",
-                            geography=county,
-                            naming = naming,
-                            str_filter = str_filter,
-                            mapping_tech_sector=tech_to_sector_file,
-                            agg_years = years_agg_file,
-                            xscale = years_agg_file,
-                            )
     
     
     

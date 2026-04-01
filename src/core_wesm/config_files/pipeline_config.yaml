@@ -1,0 +1,28 @@
+# Configuration for workflow of CORE-WESM
+filepaths:
+    national_data_file : '../data/raw/national_datafiles/data_smp_mod_adj.txt'
+    national_spreadsheet_file : '../data/processed/national_spreadsheets/data_smp_adjt.xlsx' 
+    downscaled_model_path : '../data/processed/county_model/v014t/' 
+    county_processed_path : '../data/processed/county_model_processed/v016t/' 
+    results_path: "../results/" 
+    data_config_file_NM : './config_files/config_OSeMOSYS_Kenya.yaml' # file path to the OSeMOSYS data config file for the OSeMOSYS Kenya model
+    data_config_file_CW : './config_files/config_CORE-WESM.yaml' # file path to the OSeMOSYS data config file for the county-resolved model
+    ft_param : "./config_files/multiscale_params.xlsx"
+    glpk_dir : '../envs/bin/'
+    tech_to_sector_mapping_file : './config_files/tech_to_sector.xlsx'
+    comm_to_sector_mapping_file : './config_files/dem_com_to_sector.xlsx'
+    list_counties_file : "./config_files/list_counties.csv"
+    pop_file : '../data/raw/KNBS/population/counties_population_KNBS.csv'
+    pop_file_ruur : '../data/raw/KNBS/population/distribution-of-urban-rural-population.csv'
+    gdp_file : "../data/raw/KNBS/GCP/GCP_2020.csv"
+    housing_char : "../data/raw/KNBS/housing_survey/Chapter-5-Housing-Characteristics-Amenities-and-Adequacy.xlsx"
+    housing_dem : "../data/raw/KNBS/housing_survey/Chapter-3-Household-Demographic-and-Economic-Characteristics.xlsx"
+    nat_scens : "../data/raw/nat_scens/"
+    el_access : "../data/raw/others/electricity_access.csv"
+    market_seg: "../data/raw/others/market_segmentation.csv"
+downscaling:
+    downscaled_sectors : ["Residential","Residential-Urban","Residential-Rural","Services","Agriculture"] # sectors that are downscaled to the county level
+    remove_fte_tech_mode : True # if to remove FTE techs
+    
+county_processing:
+    datasets : ["cooking"] # which county-level datasets and other enhancements to incorporate
