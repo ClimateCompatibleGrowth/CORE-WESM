@@ -39,7 +39,7 @@ CORE-WESM
     A COunty-REsolved Whole Energy System Model (CORE-WESM) for Kenya.
 
 
-This repository contains the data, code, and documentation of CORE-WESM. It is a county-resolved version of the national `OSeMOSYS-Kenya <https://github.com/ClimateCompatibleGrowth/osemosys_kenya>`_ model.
+This repository contains the data, code, and documentation of CORE-WESM. CORE-WESM is a county-resolved version of the national `OSeMOSYS-Kenya <https://github.com/ClimateCompatibleGrowth/osemosys_kenya>`_ model.
 
 The documentation is also hosted on `ReadTheDocs <https://CORE-WESM.readthedocs.io/en/latest>`_.
 

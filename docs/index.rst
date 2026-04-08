@@ -2,20 +2,20 @@
 CORE-WESM
 =========
 
-This is the documentation of the COunty-REsolved Whole Energy System Model for Kenya (**CORE-WESM**). The CORE-WESM is a whole energy system model of Kenya with a representation of each of Kenya's 47 counties.
+This is the documentation of the COunty-REsolved Whole Energy System Model for Kenya (**CORE-WESM**). CORE-WESM is a whole energy system model of Kenya with a representation of each of Kenya's 47 counties.
 
 
 Background
 ==========
 
-The CORE-WESM has been developed to support the integration of county and national energy planning in Kenya in line with the Integrated National Energy Planning (INEP) process. The model aims to support the integration of county energy plans (CEPs) and priorities into county-national integrated energy planning process. It does not intend to replace modelling to inform CEP development.
+CORE-WESM has been developed to support the integration of county and national energy planning in Kenya in line with the Integrated National Energy Plan (INEP) process. The model aims to support the integration of county energy plans (CEPs) and priorities into the county-national integrated energy planning process. It does not intend to replace modelling to inform CEP development.
 
-More information on the context and background to the model can be found in this `scoping report`_ and `preprint`_.
+More information on the context and background to the model can be found in this `scoping report`_ and `preprint2`_.
 
 
 Overarching approach and workflow
 =================================
-The CORE-WESM is a county-disaggregated version of the open-source whole energy system model OSeMOSYS-Kenya. OSeMOSYS-Kenya is a linear optimization model built using the open-source modelling framework OSeMOSYS. The development and application of the CORE-WESM model is based on a workflow with two overarching steps:
+CORE-WESM is a county-disaggregated version of the open-source whole energy system model OSeMOSYS-Kenya. OSeMOSYS-Kenya is a linear optimization model built using the open-source modelling framework OSeMOSYS. The development and application of CORE-WESM is based on a workflow with two overarching steps:
 
 
 #. The creation of a county-resolved model input data set based on the disaggregation of OSeMOSYS-Kenya and inclusion of different county-level data.
@@ -25,7 +25,7 @@ Both steps are explained in more detail on the respective pages of the documenta
 
 
 .. warning::
-   The current CORE-WESM version can be considered a minimal viable product (MVP) with several limitations. It aims to provide the foundations for further development, in particular the integration of county-specific data and county energy plans as and when developed.
+   The current CORE-WESM version – as any energy model – has limitations that are important to understand before using the model.
 
 
 Scope of this documentation
@@ -94,4 +94,5 @@ Indices and tables
 .. _wesm docs : https://osemosys-kenya-wesm.readthedocs.io/en/latest/
 .. _wesm github : https://github.com/ClimateCompatibleGrowth/osemosys_kenya_wesm
 .. _preprint : https://doi.org/10.5281/zenodo.15115502
+.. _preprint2 : https://zenodo.org/records/19360964
 .. _scoping report : https://doi.org/10.5281/zenodo.15108308

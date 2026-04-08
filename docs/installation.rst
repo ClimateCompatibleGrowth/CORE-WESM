@@ -31,4 +31,6 @@ To download and set up the CORE-WESM model workflow, the following steps need to
 
 4. **Install solvers following instructions on the relevant websites. The workflow script currently works with the** `HiGHS <https://highs.dev/>`_  **and** `cbc <https://github.com/coin-or/Cbc#DownloadandInstall>`_ **solvers**.
 
+5. **Adjust the config files (``run.yaml``, ``pipeline_config.yaml``) in ``src/core_wesm/config_files`` as required.
+
 
