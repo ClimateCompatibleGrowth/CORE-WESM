@@ -46,7 +46,7 @@ The documentation is also hosted on `ReadTheDocs <https://CORE-WESM.readthedocs.
 Licenses
 ########
 
-|MIT license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
    :target: https://github.com/ClimateCompatibleGrowth/CORE-WESM/blob/master/LICENSE.txt
 
 With the exception of model input data, all files are released under a MIT license (see LICENSE.txt).
