@@ -36,26 +36,26 @@
 CORE-WESM
 =========
 
-
     A COunty-REsolved Whole Energy System Model (CORE-WESM) for Kenya.
 
 
-This repository contains the data, code, and documentation of CORE-WESM.
+This repository contains the data, code, and documentation of CORE-WESM. It is a county-resolved version of the national `OSeMOSYS-Kenya <https://github.com/ClimateCompatibleGrowth/osemosys_kenya>`_ model.
 
 The documentation is also hosted on `ReadTheDocs <https://CORE-WESM.readthedocs.io/en/latest>`_.
 
 Licenses
 ########
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The model data files, derived from the national `OSeMOSYS-Kenya <https://github.com/ClimateCompatibleGrowth/osemosys_kenya>`_ model, located at ``src/core_wesm/data/`` are released under a `CC BY 4.0 <https://creativecommons.org/licenses/by/4.0/deed.en>`_ license.
+With the exception of model input data, all files are released under a MIT license (see LICENSE.txt).
 
-All other model files are released under a MIT license (see LICENSE.txt).
+Licenses of model input data in ``data/raw/`` vary depending on the data provider, with information provided in ``data/raw/SOURCES.txt``.
 
 
 
 Acknowledgements
-===============
+================
 
 The development of the CORE-WESM was supported by funding from the UK Partnering for Accelerated Climate Transitions (PACT) programme and the Climate Compatible Growth (CCG) programme. CCG is funded by UK aid from the UK government. However, the views expressed herein do not necessarily reflect the UK government's official policies.
 
