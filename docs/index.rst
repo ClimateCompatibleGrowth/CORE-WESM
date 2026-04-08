@@ -10,7 +10,7 @@ Background
 
 CORE-WESM has been developed to support the integration of county and national energy planning in Kenya in line with the Integrated National Energy Plan (INEP) process. The model aims to support the integration of county energy plans (CEPs) and priorities into the county-national integrated energy planning process. It does not intend to replace modelling to inform CEP development.
 
-More information on the context and background to the model can be found in this `scoping report`_ and `preprint2`_.
+More information on the context and background to the model can be found in this `scoping report`_ and `preprint`_.
 
 
 Overarching approach and workflow
@@ -21,7 +21,7 @@ CORE-WESM is a county-disaggregated version of the open-source whole energy syst
 #. The creation of a county-resolved model input data set based on the disaggregation of OSeMOSYS-Kenya and inclusion of different county-level data.
 #. The flexible application of the county-resolved model faclitated by a compact multi-scale modelling framework wrapped around OSeMOSYS.
 
-Both steps are explained in more detail on the respective pages of the documentation linked in the navigation panel on the left and below.
+The steps are explained in more detail in :ref:`model` and :ref:`data` (also linked in the navigation panel on the left and below).
 
 
 .. warning::
@@ -60,8 +60,8 @@ Contents
    :maxdepth: 1
 
    Installation <installation>
+   Model workflow <model>
    Model input data <data>
-   Model application <model>
    Contributions & Help <contributing>
    License <license>
    Authors <authors>
@@ -93,6 +93,6 @@ Indices and tables
 .. _classical style: https://www.sphinx-doc.org/en/master/domains.html#info-field-lists
 .. _wesm docs : https://osemosys-kenya-wesm.readthedocs.io/en/latest/
 .. _wesm github : https://github.com/ClimateCompatibleGrowth/osemosys_kenya_wesm
-.. _preprint : https://doi.org/10.5281/zenodo.15115502
-.. _preprint2 : https://zenodo.org/records/19360964
+.. _preprint1 : https://doi.org/10.5281/zenodo.15115502
+.. _preprint : https://zenodo.org/records/19360964
 .. _scoping report : https://doi.org/10.5281/zenodo.15108308

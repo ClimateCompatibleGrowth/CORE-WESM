@@ -1,7 +1,7 @@
 .. _model:
 
 =================
-Model application
+Model workflow
 =================
 
 A complete set up of CORE-WESM includes three different elements,
@@ -22,7 +22,7 @@ Running the model entails four different steps:
 These steps are further explained in the sections below.
 
 An overview of the workflow and data flows is provided in Figure below.
-:ref:`data`
+
 
 
 .. figure:: ../figures/workflow.png
@@ -37,14 +37,14 @@ Configuration of workflow and run
 
 The configuration of the workflow and model is based on five configuration files in YAML format, which includes data (``config_CORE-WESM.yaml`` and ``config_OSeMOSYS_Kenya.yaml``) and workflow (``run.yaml``, ``analysis_config_X.yaml`` and ``pipeline_config.yaml``) configuration files. 
 
-The data configuration files list the sets and parameters and relevant specifications, e.g., data types, for the national OSeMOSYS Kenya model as well as CORE-WESM. The format is similar to config files used for the OSeMOSYS processing library `otoole`_. A data configuration file is provided in the model repository and only needs to be updated if the model structure is amended. An excerpt of ``config_CORE-WESM.yaml`` is shown below.
+The data configuration files list the sets and parameters and relevant specifications, e.g., data types, for the national OSeMOSYS Kenya model as well as CORE-WESM. The format is similar to config files used for the OSeMOSYS processing library `otoole`_. Data configuration files are provided in the model repository and only need to be updated if the model structure is amended. An excerpt of ``config_CORE-WESM.yaml`` is shown below.
 
 
 .. literalinclude:: ../src/core_wesm/config_files/config_CORE-WESM.yaml
   :language: YAML
   :lines: 16-25
 
-The workflow configuration files need to be updated to the local model setup, and to define the required model runs. The model repository includes default workflow config files. The files are also shown in full below.
+The workflow configuration files need to be updated to match the local model setup, and to define the required model runs. The model repository includes default workflow config files. The files are also shown in full below.
 
 ``pipeline_config.yaml`` defines the general model setup, in particular also filepaths:
 
@@ -52,10 +52,12 @@ The workflow configuration files need to be updated to the local model setup, an
   :language: YAML
 
 ``run.yaml`` sets the analyes, i.e., model runs, to be performed:
+
 .. literalinclude:: ../src/core_wesm/config_files/run.yaml
   :language: YAML
 
 ``analysis_config_KNeCS.yaml`` defines an analysis setup, e.g., scenarios and spatial configuration to be used for model runs:
+
 .. literalinclude:: ../src/core_wesm/config_files/analysis_config_KNeCS.yaml
   :language: YAML
 
@@ -66,6 +68,7 @@ Processing input data and performing model runs
 The configuration files described above are defining how the workflow script (``workflow.py``) is executed. The script makes use of workflow functions defined in a separate script, based on the Python module (``ospro.py``) which includes a number of relevant processing functions. It is also based on the compact multi-scale modelling framework `fratoo`_. The workflow script can be used as is for the entire workflow or certain steps, e.g., up until the generation of a OSeMOSYS datafile. It can also be the basis for further development or for a completely redeveloped workflow that could also directly build on the fratoo framework.
 
 The workflow script includes the following steps:
+
 1. Processing of raw input data (this is further explained in :ref:`data`)
     a. Converting the OSeMOSYS-Kenya data file into a spreadsheet file for processing
     b. Downscaling the model to a county-resolved model

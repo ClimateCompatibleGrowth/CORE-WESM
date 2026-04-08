@@ -4,13 +4,13 @@
 Model input data
 ================
 
-CORE-WESM follows a hierarchical approach to data sourcing. The approach allows for the generation of a complete model, despite limited data availability, as the basis for further development as part of the INEP process as and when further energy plans and data become available. CORE-WESM builds on three different types of input data sources:
+CORE-WESM follows a hierarchical approach to data sourcing. The approach allows for the generation of a complete model, despite limited data availability, as the basis for further development as part of the INEP process and as and when further energy plans and data become available. CORE-WESM builds on three different types of input data sources:
 
    - **Source 1**: Data from county plans and administrations (highest priority).
    - **Source 2**: County-resolved datasets from national data providers.
    - **Source 3**: Downscaled national data where other data are not available (lowest priority).
 
-The workflow itself starts with the lowest priority data (downscaled data), which are replaced or adjusted if other data are available. The three different data sources are explained in the following sections. More detail is also provided in the `scoping report`_ and `preprint2`. Source for all raw input data are provided in the `GitHub repository <https://github.com/ClimateCompatibleGrowth/CORE-WESM/blob/master/data/raw/SOURCES.txt>`_.
+The workflow itself starts with the lowest priority data (downscaled data), which are replaced or adjusted if other data are available. The three different data sources are explained in the following sections. More detail is also provided in the `scoping report`_ and `preprint`. Source for all raw input data are provided in the `GitHub repository <https://github.com/ClimateCompatibleGrowth/CORE-WESM/blob/master/data/raw/SOURCES.txt>`_.
 
 
 Downscaled data (Source 3)
@@ -23,3 +23,6 @@ County-resolved (Source 2) and county-specific data (Source 1)
 
 County-resolved and county-specific data are used to replace or adjust downscaled data where available. Currently, county-resolved datasets for the cooking sector are integrated for a more detailed representation of the sector. This can be extended as other data become available and as analyses require.
 
+
+.. _preprint : https://zenodo.org/records/19360964
+.. _scoping report : https://doi.org/10.5281/zenodo.15108308
